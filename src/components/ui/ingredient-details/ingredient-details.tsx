@@ -8,13 +8,13 @@ export const IngredientDetailsUI: FC<IngredientDetailsUIProps> = memo(
   ({ ingredientData, isModal }) => {
     const { name, image_large, calories, proteins, fat, carbohydrates } =
       ingredientData;
-    
+
     const blockStyle = clsx(styles.content, {
       [common.paddingBlockStart]: !isModal
     });
 
     return (
-        <div className={blockStyle}>
+      <div className={blockStyle}>
         {!isModal && (
           <h2 className='text text_type_main-large'>Детали ингредиента</h2>
         )}

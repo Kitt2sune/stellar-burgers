@@ -62,9 +62,9 @@ export const OrderInfoUI: FC<OrderInfoUIProps> = memo(
             <FormattedDate date={orderInfo.date} />
           </p>
           <span
-          className={`text text_type_digits-default pr-4 ${styles.total}`}
+            className={`text text_type_digits-default pr-4 ${styles.total}`}
           >
-          {orderInfo.total}
+            {orderInfo.total}
           </span>
           <CurrencyIcon type={'primary'} />
         </div>

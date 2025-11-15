@@ -42,7 +42,7 @@ export const fetchOrders = createAsyncThunk(
 // Создание нового заказа
 export const createOrder = createAsyncThunk(
   'orders/create',
-  async (order: string[], {dispatch}) => {
+  async (order: string[], { dispatch }) => {
     const responce = await orderBurgerApi(order);
     dispatch(resetConstructor());
     return responce;

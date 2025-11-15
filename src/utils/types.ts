@@ -41,4 +41,4 @@ export type TTabMode = 'bun' | 'sauce' | 'main';
 
 export type TIsModal = {
   isModal?: boolean;
-}
+};

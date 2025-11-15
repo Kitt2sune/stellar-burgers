@@ -10,7 +10,7 @@ import {
 import { selectIngredients } from '../../services/slices/ingredientsSlice';
 import { useParams } from 'react-router-dom';
 
-export const OrderInfo: FC<TIsModal> = ({isModal}) => {
+export const OrderInfo: FC<TIsModal> = ({ isModal }) => {
   /** TODO: взять переменные orderData и ingredients из стора */
   const orderData = useSelector(selectOrderModalData);
 
@@ -70,5 +70,5 @@ export const OrderInfo: FC<TIsModal> = ({isModal}) => {
   }
 
   const title = '#${order.number}';
-  return <OrderInfoUI orderInfo={orderInfo} isModal={isModal} title={title}/>;
+  return <OrderInfoUI orderInfo={orderInfo} isModal={isModal} title={title} />;
 };

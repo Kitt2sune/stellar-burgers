@@ -1,1 +1,1 @@
-export {OrderInfoWrapper} from './order-info-wrapper'
+export { OrderInfoWrapper } from './order-info-wrapper';

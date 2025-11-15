@@ -23,7 +23,7 @@ const initialState: TIngredientsState = {
 // Получение ингредиентов с сервера
 export const fetchIngredients = createAsyncThunk(
   'ingredients/fetch',
-  async () => await getIngredientsApi()
+  getIngredientsApi
 );
 
 // Создание слайса

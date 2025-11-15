@@ -11,12 +11,12 @@ export const BurgerConstructorElement: FC<BurgerConstructorElementProps> = memo(
   ({ ingredient, index, totalItems }) => {
     const dispatch = useDispatch();
 
-    const handleMoveDown =() => {
-      dispatch(moveIngredientBurger({ingredient, upwards: false}));
-    }
+    const handleMoveDown = () => {
+      dispatch(moveIngredientBurger({ ingredient, upwards: false }));
+    };
 
     const handleMoveUp = () => {
-      dispatch(moveIngredientBurger({ingredient, upwards: true}));
+      dispatch(moveIngredientBurger({ ingredient, upwards: true }));
     };
 
     const handleClose = () => {

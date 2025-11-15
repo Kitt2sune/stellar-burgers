@@ -12,13 +12,13 @@ export const Login: FC = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const from = (location.state as { from?: Location })?.from?.pathname || '/profile';
+  const from = (location.state as { from?: Location })?.from?.pathname || '/';
 
   const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
     try {
-      const responce = await dispatch(loginUser({ email, password})).unwrap();
-      if (responce && responce.success) navigate(from, { replace: true});
+      const responce = await dispatch(loginUser({ email, password })).unwrap();
+      if (responce && responce.success) navigate(from, { replace: true });
     } catch (e) {}
   };
 
