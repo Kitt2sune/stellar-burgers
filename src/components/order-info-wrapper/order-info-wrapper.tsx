@@ -12,7 +12,7 @@ export const OrderInfoWrapper: FC<TOrderInfoWrapperProps> = ({ onClose }) => {
   const orderData = useSelector(selectOrderModalData);
   const title = useMemo(() => {
     if (!orderData) return '';
-    return `#${orderData.number}`;
+    return '#${orderData.number}';
   }, [orderData]);
 
   return (

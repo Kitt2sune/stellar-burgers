@@ -69,6 +69,6 @@ export const OrderInfo: FC<TIsModal> = ({ isModal }) => {
     return <Preloader />;
   }
 
-  const title = '#${order.number}';
+  const title = '#${orderInfo.number}';
   return <OrderInfoUI orderInfo={orderInfo} isModal={isModal} title={title} />;
 };
