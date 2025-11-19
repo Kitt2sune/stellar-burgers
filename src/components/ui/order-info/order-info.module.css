@@ -2,6 +2,11 @@
   margin: 0 auto;
   width: 640px;
 }
+
+.textAlignCenter {
+  text-align: center;
+}
+
 .number {
   text-align: center;
 }
